@@ -1,0 +1,30 @@
+{
+  "name": "deploy",
+  "version": "0.1.0",
+  "author": "ReactiveGrid <support@reactivegrid.com>",
+  "description": "Deploy",
+  "contributor": [
+    {
+      "name": "Daniel Osorio",
+      "email": "danosot@gmail.com"
+    },
+    {
+      "name": "Santiago Osorio",
+      "email": "santiagoosorio1@gmail.com"
+    }
+  ],
+  "scripts": {
+    "start": "node deploy.js"
+  },
+  "main": "deploy.js",
+  "keywords": [
+    "reactivegrid",
+    "deploy"
+  ],
+  "dependencies": {
+    "gith": "^1.0.4"
+  },
+  "engines": {
+    "node": "~0.10.26"
+  }
+}
