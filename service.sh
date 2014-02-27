@@ -1,6 +1,6 @@
 set -evu
 
-if [ $# -ne 3 ]; then
+if [ $# -ne 2 ]; then
   echo "USAGE: $0 name command"
   exit 1
 fi
