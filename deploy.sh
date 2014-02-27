@@ -3,10 +3,8 @@ set -evu
 # fetch source
 git fetch --all
 
-ref=`git for-each-ref refs/tags \
-  --sort=-authordate \
-  --format='%(refname)' \
-  --count=1 | cut -d '/' -f 3`
+# latest ref
+ref=`git for-each-ref --sort=-authordate --format='%(refname)' --count=1 | cut -d '/' -f 3`
 
 if [ -z $ref ]; then
   exit 1;
