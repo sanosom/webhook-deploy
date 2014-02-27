@@ -14,7 +14,7 @@ fi
 git reset --hard $ref
 
 # Install dependencies
-cd app && npm install --production && cd ..
+cd app && npm install --production && cd .. 2>&1
 
 # Restart services
 sv restart app
