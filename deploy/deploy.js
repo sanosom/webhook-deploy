@@ -17,13 +17,12 @@ opts = {
 };
 
 gith( repo ).on('all', function (payload){
-  var exec = require('child_process').exec
+  var sys = require('sys')
+    , exec = require('child_process').exec
     , puts;
 
   puts = function (error, stdout, stderr){
-    console.log('Error: ', error);
-    console.log('Stdout: ', stdout);
-    console.log('Stderr: ', stderr);
+    sys.puts(stdout);
   }
 
   exec(cmd, opts, puts);
